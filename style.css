@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Inter', sans-serif;
+    color: rgba(255, 253, 250, 1);
 }
 
 .main-body {
@@ -57,7 +58,6 @@ main {
     width: 1110px;
     height: 511px;
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 .section-one {
@@ -107,13 +107,12 @@ main {
 
 .section-one .four {
     width: 350px;
-    /* height: 104px; */
-    height: 182px;
+    height: 181px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .section-one .four .text {
@@ -121,7 +120,7 @@ main {
     line-height: 26px;
     font-weight: 400;
     color: rgba(94, 96, 122, 1);
-    margin: 2px 0 25px 0;
+    margin: 2px 0 30px 0;
 }
 
 .section-one .four .read-more {
@@ -292,13 +291,14 @@ main {
         display: block;
     }
     .main-body {
-        margin: 10px;
-        width: 375px;
+        margin: 8px;
+        margin-top: 25px;
+        max-width: 375px;
         height: 1872px;
     }
 
     header {
-        width: 100%;
+        width: 343px;
     }
 
     nav {
@@ -322,72 +322,77 @@ main {
     main {
         flex-direction: column;
         height: 1189px;
-        /* height: 1150px; */
         width: 100%;
     }
 
     .section-one {
-        grid-template-columns: 1;
-        grid-template-rows: 3;
-        height: 636px;
+        /* height: 636px; */
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        display: block;
     }
 
     .section-one .one{
-        width: 100%;
+        width: 343px;
         height: 300px;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        display: block;
+        background-size: cover;
+        background-position: center;
     }
 
     .section-one .three {
         height: 120px;
         width: 100%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin-top: 0;
+        display: block;
+        margin: 20px 0;
     }
 
     .section-one .three .future {
-        /* height: 150px; */
         font-size: 40px;
         font-weight: 900;
         width: 40%;
         line-height: 40px;
+        margin: 20px 0;
     }
+
 
     .section-one .three .text {
         font-size: 15px;
+        margin: 0;
     }
 
     .section-one .four {
-        width: 50%;
+        width: 343px;
         height: 104px;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        margin-top: 0;
+        display: block;
+        margin: 0;
     }
+
+    .section-one .four .text {
+       margin-bottom: 30px;
+    }
+
 
     .section-one .four .read-more {
         height: 48px;
+        /* height: 70px; */
         width: 185px;
+        margin-bottom: 50px; 
     }
 
     .section-two{
-        width: 100%;
+        max-width: 345px;
         height: 489px;
-        justify-content: flex-end;
-        margin-left: 0;
+        margin: 0;
+        display: block;
     }
 
     .section-two .new {
         height: 32px;
         width: 70px;
+        font-size: 32px;
+        line-height: 32px;
     }
 
     .section-two, .last {
@@ -398,11 +403,12 @@ main {
 
     .last {
         height: 451px;
-        margin-top: 0;
+        margin-top: 60px;
     }
 
     .last .last-div {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        height: 129px;
     }
 }  
