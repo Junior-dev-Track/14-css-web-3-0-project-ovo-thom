@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Inter', sans-serif;
     color: rgba(255, 253, 250, 1);
 }
@@ -61,7 +62,8 @@ main {
 
 .section-one {
     width: 730px;
-    height: 511px;
+    /* height: 511px; */
+    height: 530px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -85,6 +87,7 @@ main {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    display: grid;
 }
 
 .section-one .three {
@@ -96,6 +99,7 @@ main {
     grid-row-start: 2;
     grid-row-end: 2;
     margin-top: 30px;
+    display: grid;
 }
 
 .section-one .three .future {
@@ -291,8 +295,7 @@ aside .main-container article .card-text {
         display: block;
     }
     .main-body {
-        margin: 8px;
-        margin-top: 25px;
+        margin: 25px 22px;
         max-width: 375px;
         height: 1872px;
     }
@@ -379,34 +382,36 @@ aside .main-container article .card-text {
         margin-bottom: 50px; 
     }
 
-    .section-two{
+    aside{
         max-width: 345px;
         height: 489px;
         margin: 0;
         display: block;
     }
 
-    .section-two .new {
+    aside .new {
         height: 32px;
         width: 70px;
         font-size: 32px;
         line-height: 32px;
     }
 
-    .section-two, .last {
+    aside {
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
 
     .last {
+        display: flex;
+        flex-direction: column;
         height: 451px;
-        margin-top: 60px;
+        margin-top: 70px;
     }
 
     .last .last-div {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         height: 129px;
     }
 }  
