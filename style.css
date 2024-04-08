@@ -23,7 +23,6 @@ body {
 
 header {
     width: 100%;
-    /* display: flex; */
     margin-bottom: 30px;
 }
 
@@ -128,6 +127,7 @@ main {
     width: 185px;
     height: 48px;
     border: none;
+    cursor: pointer;
 }
 
 .section-one .four .read-more:hover{
@@ -150,7 +150,7 @@ main {
 }
 
 
-.section-two {
+aside{
     padding: 20px 15px;
     background-color: rgba(0, 0, 26, 1);
     width: 350px;
@@ -158,7 +158,7 @@ main {
     margin-left: 20px;
 }
 
-.section-two .new {
+aside .new {
     color: rgba(233, 170, 82, 1);
     font-size: 40px;
     line-height: 40px;
@@ -166,19 +166,19 @@ main {
     margin-bottom: 40px;
 }
 
-.section-two .main-container {
+aside .main-container {
     width: 302px;
     height: 374px;
 }
 
-.section-two .main-container .container-card {
+aside .main-container article {
     width: 302px;
     height: 84px;
     position: relative;
     margin-bottom: 50px;
 }
 
-.section-two .main-container .container-card:not(:nth-child(3))::after {
+aside .main-container article:not(:nth-child(3))::after {
     content: "";
     height: 1px;
     width: 302px;
@@ -188,7 +188,7 @@ main {
 }
 
 
-.section-two .main-container .container-card .title {
+aside.main-container article .title {
     color: rgba(255, 253, 250, 1);
     font-weight: 800;
     font-size: 20px;
@@ -196,7 +196,7 @@ main {
     margin-bottom: 10px;
 }
 
-.section-two .main-container .container-card .card-text {
+aside .main-container article .card-text {
     color: rgba(197, 198, 206, 1);
     font-size: 15px;
     font-weight: 400;
@@ -326,7 +326,6 @@ main {
     }
 
     .section-one {
-        /* height: 636px; */
         height: 750px;
         display: flex;
         flex-direction: column;
@@ -376,7 +375,6 @@ main {
 
     .section-one .four .read-more {
         height: 48px;
-        /* height: 70px; */
         width: 185px;
         margin-bottom: 50px; 
     }
